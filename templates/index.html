@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Real-Time Emotion Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Real-Time Emotion Detection</h1>
+
+    <div id="cameraBox">
+      <div id="emojiBubble">🙂</div>
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
+    <div id="status">
+      <span id="state">Starting camera…</span>
+      <span id="label"></span>
+    </div>
+
+    <div id="backend">
+      <label>Backend URL</label>
+      <input id="backendUrl" type="text" placeholder="https://your-render.onrender.com" />
+      <button id="saveUrl">Save</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
