@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#0b1020; color:#eef1ff; }
+.wrap { max-width: 900px; margin: 40px auto; padding: 16px; }
+h1 { margin: 0 0 16px; font-weight: 700; letter-spacing: .5px; }
+
+#cameraBox {
+  position: relative;
+  width: 640px; height: 480px;
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  margin: 12px 0 8px;
+}
+video, canvas { position: absolute; top: 0; left: 0; width: 640px; height: 480px; }
+canvas { pointer-events: none; }
+
+#emojiBubble {
+  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  font-size: 48px; line-height: 1; padding: 6px 12px;
+  background: rgba(10,10,10,.5); border-radius: 12px; backdrop-filter: blur(6px);
+}
+
+#status { display:flex; gap:12px; align-items:center; margin-top: 10px; opacity:.9; }
+#label { font-weight: 700; }
+
+#backend { margin-top: 14px; display:flex; gap:8px; align-items:center; }
+#backend input {
+  width: 420px; padding: 8px 10px; border-radius: 10px; border: 1px solid #2e3b6b;
+  background:#0f1630; color:#fff;
+}
+#backend button {
+  padding: 8px 14px; border-radius: 10px; border: 0; background:#5b77ff; color:white; cursor:pointer;
+}
+#backend button:hover { filter: brightness(1.05); }
