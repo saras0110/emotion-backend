@@ -19,8 +19,8 @@ FRONTEND_ORIGINS = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "http://localhost:8000",
-    "https://YOUR_GITHUB_USERNAME.github.io",  # replace with your GH Pages root
-    "https://YOUR_GITHUB_USERNAME.github.io/YOUR_PAGES_REPO"  # or specific project page
+    "https://saras0110.github.io",  # replace with your GH Pages root
+    "https://saras0110.github.io/emotion-frontend"  # or specific project page
 ]
 
 EMOTIONS = [
